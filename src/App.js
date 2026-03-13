@@ -74,7 +74,7 @@ const App = () => {
             <h1 className="text-6xl font-extrabold text-white tracking-tight italic">Duarte Laia</h1>
             <p className="text-2xl text-blue-400 mt-4 font-mono italic">MSc Computer Science @ IST</p>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8 mt-4 max-w-xl text-sm text-slate-400">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8 mt-6 max-w-xl text-sm text-slate-400">
               <a href="mailto:duarte.laia04@gmail.com" className="flex items-center gap-3 hover:text-blue-400 transition-colors py-1">
                 <Mail size={18} className="text-blue-500/70"/> duarte.laia04@gmail.com
               </a>
@@ -146,8 +146,8 @@ const App = () => {
                 <h4 className="text-xl font-bold text-slate-100 group-hover:text-blue-400 transition-colors">Master of CS & Engineering</h4>
                 <p className="text-blue-400 font-mono text-sm mt-1">2025 - Present | Current: 17.2/20</p>
                 <div className="mt-4 grid grid-cols-2 gap-2 text-sm text-slate-400">
-                  <p>Distributed Applications</p><p className="text-right text-white">18/20</p>
-                  <p>Network Security</p><p className="text-right text-white">17/20</p>
+                  <p>Network Security</p><p className="text-right text-white">18/20</p>
+                  <p>Distributed Applications</p><p className="text-right text-white">17/20</p>
                   <p>Forensics</p><p className="text-right text-white">17/20</p>
                 </div>
               </div>
