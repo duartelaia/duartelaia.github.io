@@ -154,7 +154,7 @@ const App = () => {
               <div className="group border-l-2 border-slate-800 pl-8 hover:border-slate-600 transition-colors">
                 <h4 className="text-xl font-bold text-slate-100 group-hover:text-slate-300 transition-colors">Bachelor in CS & Engineering</h4>
                 <p className="text-slate-400 font-mono text-sm mt-1">2022 - 2025 | Final: 17.38/20</p>
-                <p className="mt-4 text-xs text-emerald-500 font-mono uppercase tracking-widest">Academic Merit Award 22/23 & 23/24</p>
+                <p className="mt-4 text-xs text-emerald-500 font-mono uppercase tracking-widest">Academic Merit Award 22/23, 23/24 & 24/25</p>
               </div>
             </div>
           </section>
