@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Github, Mail, Phone, MapPin, ExternalLink, Shield, Server, Network, Terminal, Code, Database, Lock, Circle } from 'lucide-react';
+import { Github, Mail, Phone, MapPin, ExternalLink, Shield, Server, Network, Terminal, Code, Database, Lock, Circle, Cpu } from 'lucide-react';
 
 const FadeInSection = ({ children }) => {
   const [isVisible, setVisible] = useState(false);
@@ -25,6 +25,12 @@ const FadeInSection = ({ children }) => {
 
 const App = () => {
   const projects = [
+    {
+      title: "DepChain (Highly Dependable Blockchain)",
+      link: "https://github.com/tsbranquinho/SEC",
+      desc: "Permissioned blockchain based on the HotStuff BFT algorithm. Features EVM smart contract execution via Hyperledger Besu, native cryptocurrency (DepCoin), and frontrunning-resistant ERC-20 tokens.",
+      tags: ["HotStuff BFT", "Java", "Solidity", "Blockchain"]
+    },
     {
       title: "DeathNode",
       link: "https://github.com/tecnico-sec/A01-DeathNode",
@@ -96,6 +102,7 @@ const App = () => {
               <Shield className="text-red-500 w-8 h-8" title="Cybersecurity" />
               <Server className="text-blue-500 w-8 h-8" title="Distributed Systems" />
               <Network className="text-emerald-500 w-8 h-8" title="Network Architectures" />
+              <Cpu className="text-purple-500 w-8 h-8" title="BFT Consensus" />
             </div>
           </div>
         </div>
@@ -168,10 +175,10 @@ const App = () => {
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { icon: <Code />, label: "Languages", list: "C/C++, Java, Python" },
-                { icon: <Database />, label: "Distributed", list: "gRPC, Paxos" },
-                { icon: <Lock />, label: "Security", list: "Cryptography, Forensics" },
-                { icon: <Terminal />, label: "DevOps", list: "K8s, Docker, Terraform" }
+                { icon: <Code />, label: "Languages", list: "C/C++, Java, Python, Solidity" },
+                { icon: <Database />, label: "Distributed", list: "gRPC, Paxos, HotStuff BFT" },
+                { icon: <Lock />, label: "Security", list: "Cryptography, Smart Contracts" },
+                { icon: <Terminal />, label: "DevOps", list: "K8s, Docker, Besu, Terraform" }
               ].map((skill, i) => (
                 <div key={i} className="p-6 bg-slate-900/20 border border-slate-800 rounded-xl hover:bg-slate-800/30 transition-all text-center md:text-left">
                   <div className="text-blue-400 mb-4 flex justify-center md:justify-start">{skill.icon}</div>
